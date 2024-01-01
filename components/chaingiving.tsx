@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import {GoalIcon, RocketIcon, RouteIcon} from "lucide-react";
+import Image from "next/image";
 
 export function ChainGiving() {
   return (
@@ -77,7 +78,7 @@ export function ChainGiving() {
               <div className="flex justify-around">
                   <a href="https://substrate.io/"><Card>
                       <CardHeader>
-                          <img
+                          <Image
                               alt="Substrate"
                               className="mx-auto rounded-full"
                               height="150"
@@ -95,7 +96,7 @@ export function ChainGiving() {
                   </Card></a>
                   <Card>
                       <CardHeader>
-                          <img
+                          <Image
                               alt="Team Member 1"
                               className="mx-auto rounded-full"
                               height="150"
