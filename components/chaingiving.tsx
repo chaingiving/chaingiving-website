@@ -34,8 +34,8 @@ export function ChainGiving() {
             Leveraging Polkadot for fundraising and aid distribution
           </p>
           <p>
-            <Button className="mt-6 px-8 py-3 bg-green-500 text-white rounded"> Join us on Discord </Button>
-            <Button className="mt-5 px-8 py-3 bg-blue-600 text-white rounded-md">Learn More</Button>
+            <a href="https://discord.gg/d3QnfrebmY"><Button className="mt-6 px-8 py-3 bg-green-500 text-white rounded">Join us on Discord </Button></a>
+            <a href="https://forum.polkadot.network/t/chain-giving-leveraging-the-polkadot-network-for-fundraising-and-aid-distribution/5371"><Button className="mt-5 px-8 py-3 bg-blue-600 text-white rounded-md">Learn More</Button></a>
           </p>
 
         </main>
