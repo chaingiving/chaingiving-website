@@ -62,7 +62,7 @@ export function ChainGiving() {
             </div>
             <div className="flex flex-col items-center">
               <GoalIcon className="w-10 h-10 mb-4"/><b>Trustless</b>
-              <p className="text-center">Users don&apos;t have to trust a single party to ensure donations will reach their targets.</p>
+              <p className="text-center">Users don&#39;t have to trust a single party to ensure donations will reach their targets.</p>
             </div>
             <div className="flex flex-col items-center">
               <RocketIcon className="w-10 h-10 mb-4"/><b>Fast</b>
