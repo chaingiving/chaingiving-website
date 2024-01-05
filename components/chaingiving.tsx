@@ -5,7 +5,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CardHeader, CardContent, Card } from "@/components/ui/card";
-import { GoalIcon, RocketIcon, RouteIcon } from "lucide-react";
+import {GoalIcon, RouteIcon, SparklesIcon, ViewIcon} from "lucide-react";
 import Image from "next/image";
 
 export function ChainGiving() {
@@ -62,28 +62,33 @@ export function ChainGiving() {
         {/*    }}*/}
         {/*    width="600"*/}
         {/*/>*/}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="flex flex-col items-center">
             <RouteIcon className="w-10 h-10 mb-4" />
-            <b>End to End Transparency</b>
+            <b>An End to End Solution</b>
             <p className="text-center">
-              Covers the full journey from fundraising to carrying out aid
-              programs.
+              Our platform covers the complete journey from the fundraising of aid programs to the redeeming of aid vouchers.
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <ViewIcon className="w-10 h-10 mb-4" />
+            <b>Improved Transparency</b>
+            <p className="text-center">
+              As transactions are auditable on the blockchain, users have greater insight into the delivery and utilization of aid.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <GoalIcon className="w-10 h-10 mb-4" />
-            <b>Trustless</b>
+            <b>Trustless and Decentralized</b>
             <p className="text-center">
-              Users don&#39;t have to trust a single party to ensure donations
-              will reach their targets.
+              Equipped with self-custodial wallets, users don&#39;t have to trust a centralized party.
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <RocketIcon className="w-10 h-10 mb-4" />
-            <b>Fast</b>
+            <SparklesIcon className="w-10 h-10 mb-4" />
+            <b>Cost Efficiency</b>
             <p className="text-center">
-              On-chain transactions guarantee instant settlement of payments
+              By digitizing aid distribution, we can reduce delivery costs and maximize impact.
             </p>
           </div>
         </div>
