@@ -20,11 +20,8 @@ export function ChainGiving() {
           <Link className="text-sm font-medium" href="#">
             Home
           </Link>
-          <Link className="text-sm font-medium" href="#">
-            About
-          </Link>
-          <Link className="text-sm font-medium" href="#">
-            Contact
+          <Link className="text-sm font-medium" href="https://chaingiving.substack.com/">
+            Blog
           </Link>
         </nav>
       </header>
@@ -39,7 +36,7 @@ export function ChainGiving() {
               Join us on Discord{" "}
             </Button>
           </a>
-          <a href="https://forum.polkadot.network/t/chain-giving-leveraging-the-polkadot-network-for-fundraising-and-aid-distribution/5371">
+          <a href="https://chaingiving.substack.com/p/chaingiving-the-humanitarian-blockchain">
             <Button className="mt-5 px-8 py-3 bg-blue-600 text-white rounded-md">
               Learn More
             </Button>
