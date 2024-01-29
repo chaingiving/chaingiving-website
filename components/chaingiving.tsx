@@ -90,7 +90,7 @@ export function ChainGiving() {
               <CardHeader>
                 <Image
                   alt="Substrate"
-                  className="mx-auto rounded-full"
+                  className="mx-auto rounded-xl bg-gray-100"
                   height="150"
                   src="/images/paritysubstrate.svg"
                   style={{
@@ -114,7 +114,7 @@ export function ChainGiving() {
               <CardHeader>
                 <Image
                   alt="Team Member 1"
-                  className="mx-auto rounded-full"
+                  className="mx-auto rounded-xl"
                   height="150"
                   src="/images/Polkadot_Token_Pink.svg"
                   style={{
@@ -136,7 +136,7 @@ export function ChainGiving() {
           </a>
         </div>
       </section>
-      <footer className="flex items-center justify-between px-6 py-4 bg-gray-800">
+      <footer className="flex items-center justify-between px-6 py-4 bg-gray-800 text-white">
         <div className="flex items-center space-x-2">
           <Link href="https://twitter.com/chain_giving">
             <TwitterIcon className="h-6 w-6" />
@@ -145,7 +145,7 @@ export function ChainGiving() {
             <GithubIcon className="h-6 w-6" />
           </Link>
           <Link href="https://discord.gg/d3QnfrebmY">
-            <DiscordIcon className="h-6 w-6" />
+            <DiscordIcon className="h-6 w-6 white" />
           </Link>
         </div>
         <p className="text-sm">© Chain.Giving. All rights reserved.</p>
