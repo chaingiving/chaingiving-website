@@ -27,38 +27,27 @@ export function ChainGiving() {
       </header>
       <main className="px-6 py-12 text-center">
         <h1 className="text-3xl font-bold">Chain.Giving</h1>
-        <p className="max-w-lg mx-auto mt-4 text-gray-600">
+        <p className="max-w-lg mx-auto mt-4">
           Leveraging Polkadot for fundraising and aid distribution
         </p>
         <p>
           <a href="https://discord.gg/d3QnfrebmY">
-            <Button className="mt-6 px-8 py-3 bg-green-500 text-white rounded">
+            <Button className="mt-6 px-8 py-3 bg-green-500 rounded">
               Join us on Discord{" "}
             </Button>
           </a>
           <a href="https://chaingiving.substack.com/p/chaingiving-the-humanitarian-blockchain">
-            <Button className="mt-5 px-8 py-3 bg-blue-600 text-white rounded-md">
+            <Button className="mt-5 px-8 py-3 bg-blue-600 rounded-md">
               Learn More
             </Button>
           </a>
         </p>
       </main>
-      <section className="px-6 py-12 bg-gray-100">
+      <section className="px-6 py-12 bg-gray-100 dark:bg-gray-600">
         <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-        <p className="max-w-lg mx-auto mb-6 text-gray-600">
+        <p className="max-w-lg mx-auto mb-6 text-bold">
           We strive to bring transparency and efficiency to charitable giving.
         </p>
-        {/*<img*/}
-        {/*    alt="Our mission"*/}
-        {/*    className="mx-auto rounded"*/}
-        {/*    height="400"*/}
-        {/*    src="/placeholder.svg"*/}
-        {/*    style={{*/}
-        {/*      aspectRatio: "600/400",*/}
-        {/*      objectFit: "cover",*/}
-        {/*    }}*/}
-        {/*    width="600"*/}
-        {/*/>*/}
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="flex flex-col items-center">
             <RouteIcon className="w-10 h-10 mb-4" />
@@ -92,7 +81,7 @@ export function ChainGiving() {
       </section>
       <section className="px-6 py-12">
         <h2 className="text-2xl font-bold mb-4">Our Tech Stack</h2>
-        <p className="max-w-lg mx-auto mb-6 text-gray-600">
+        <p className="max-w-lg mx-auto mb-6">
           Chain.Giving is made possible thanks to those technologies
         </p>
         <div className="flex justify-around">
@@ -114,7 +103,7 @@ export function ChainGiving() {
                 </h3>
               </CardHeader>
               <CardContent>
-                <p className="text-center text-gray-600">
+                <p className="text-center">
                   The industry leading blockchain framework
                 </p>
               </CardContent>
@@ -138,7 +127,7 @@ export function ChainGiving() {
                 </h3>
               </CardHeader>
               <CardContent>
-                <p className="text-center text-gray-600">
+                <p className="text-center">
                   We plan to become a full fledged Parachain of the Polkadot
                   network
                 </p>
@@ -147,7 +136,7 @@ export function ChainGiving() {
           </a>
         </div>
       </section>
-      <footer className="flex items-center justify-between px-6 py-4 bg-gray-800 text-white">
+      <footer className="flex items-center justify-between px-6 py-4 bg-gray-800">
         <div className="flex items-center space-x-2">
           <Link href="https://twitter.com/chain_giving">
             <TwitterIcon className="h-6 w-6" />
