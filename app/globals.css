@@ -4,26 +4,77 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #333;
+  background: #e0f0ee;
+  font-family: "Open Sans",Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  background-position: top left;
+}
+
+div.intro-box {
+  background-color: #003f2e;
+  border-color: #05D9DD;
+  border-radius: 25px 25px 25px 25px;
+  border-width: 5px;
+  padding: 1em;
+  text-align: center;
+}
+
+.intro-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h2.intro-box {
+  color: #05D9DD;
+}
+
+p.intro-box {
+  color: #e6e9e8;
+}
+
+div.take-action-box {
+  border-color: #05D9DD;
+  border-width: 5px;
+  padding: 1em;
+  text-align: center;
+}
+
+p.take-action-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.chainGivingColor {
+  color: #006769;
+}
+
+.getInvolvedButton {
+  border-color: #69b6c3;
+}
+
+.takeActionBackground {
+  background-color: #042A2B;
 }

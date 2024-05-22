@@ -3,10 +3,7 @@
  * @see https://v0.dev/t/6PauTxu8aU8
  */
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { CardHeader, CardContent, Card } from "@/components/ui/card";
-import {GoalIcon, RouteIcon, SparklesIcon, ViewIcon} from "lucide-react";
-import Image from "next/image";
+import {Button} from "@/components/ui/button";
 
 export function ChainGiving() {
   return (
@@ -25,130 +22,85 @@ export function ChainGiving() {
           </Link>
         </nav>
       </header>
-      <main className="px-6 py-12 text-center">
-        <h1 className="text-3xl font-bold">Chain.Giving</h1>
-        <p className="max-w-lg mx-auto mt-4">
-          Leveraging Polkadot for fundraising and aid distribution
-        </p>
-        <p>
-          <a href="https://discord.gg/d3QnfrebmY">
-            <Button className="mt-6 px-8 py-3 bg-green-500 rounded">
-              Join us on Discord{" "}
-            </Button>
-          </a>
-          <a href="https://chaingiving.substack.com/p/chaingiving-the-humanitarian-blockchain">
-            <Button className="mt-5 px-8 py-3 bg-blue-600 rounded-md">
-              Learn More
-            </Button>
-          </a>
-        </p>
+      <main className="px-6 py-12 grid md:grid-cols-2 mb-4 items-center justify-center">
+        <div className="justify-start">
+          <h1 className="text-5xl font-bold py-6"><span className="chaingivingColor">Chain.Giving</span>, where giving meets blockchain technology</h1>
+          <p className="intro-text">
+            Our mission is to revolutionize digital humanitarian assistance
+            by empowering donors, nonprofits, and communities through transparency and efficiency.
+          </p>
+        </div>
+        <div className="">
+          <img src="images/chain-giving-her-section.png" alt="chain giving illustration"/>
+        </div>
+
+        {/*<p>*/}
+
+        {/*  <a href="https://chaingiving.substack.com/p/chaingiving-the-humanitarian-blockchain">*/}
+        {/*    <Button className="mt-5 px-8 py-3 bg-blue-600 rounded-md">*/}
+        {/*      Learn More*/}
+        {/*    </Button>*/}
+        {/*  </a>*/}
+        {/*</p>*/}
       </main>
-      <section className="px-6 py-12 bg-gray-100 dark:bg-gray-600">
-        <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-        <p className="max-w-lg mx-auto mb-6 text-bold">
-          We strive to bring transparency and efficiency to charitable giving.
-        </p>
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div className="flex flex-col items-center">
-            <RouteIcon className="w-10 h-10 mb-4" />
-            <b>An End to End Solution</b>
-            <p className="text-center">
-              Our platform covers the complete journey from the fundraising of aid programs to the redeeming of aid vouchers.
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <ViewIcon className="w-10 h-10 mb-4" />
-            <b>Improved Transparency</b>
-            <p className="text-center">
-              As transactions are auditable on the blockchain, users have greater insight into the delivery and utilization of aid.
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <GoalIcon className="w-10 h-10 mb-4" />
-            <b>Trustless and Decentralized</b>
-            <p className="text-center">
-              Equipped with self-custodial wallets, users don&#39;t have to trust a centralized party.
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <SparklesIcon className="w-10 h-10 mb-4" />
-            <b>Cost Efficiency</b>
-            <p className="text-center">
-              By digitizing aid distribution, we can reduce delivery costs and maximize impact.
-            </p>
-          </div>
+      <section className="py-12 text-center intro bg-gray-100 dark:bg-gray-600">
+        <div className="intro-box inline-block intro-box">
+          <h2 className="text-3xl font-bold intro-box">Discover Chain.Giving</h2>
+          <p className="max-w-lg mx-auto mb-6 text-bold intro-box intro-text">
+            Explore how Chain.Giving is transforming philanthropy with innovative blockchain technology.
+          </p>
         </div>
       </section>
       <section className="px-6 py-12">
-        <h2 className="text-2xl font-bold mb-4">Our Tech Stack</h2>
-        <p className="max-w-lg mx-auto mb-6">
-          Chain.Giving is made possible thanks to those technologies
-        </p>
-        <div className="flex justify-around">
-          <a href="https://substrate.io/">
-            <Card>
-              <CardHeader>
-                <Image
-                  alt="Substrate"
-                  className="mx-auto rounded-xl bg-gray-100"
-                  height="150"
-                  src="/images/paritysubstrate.svg"
-                  style={{
-                    aspectRatio: "150/150",
-                  }}
-                  width="150"
-                />
-                <h3 className="text-lg font-semibold mt-2 text-center">
-                  Made with Substrate
-                </h3>
-              </CardHeader>
-              <CardContent>
-                <p className="text-center">
-                  The industry leading blockchain framework
-                </p>
-              </CardContent>
-            </Card>
-          </a>
-          <a href="https://polkadot.network/">
-            <Card>
-              <CardHeader>
-                <Image
-                  alt="Team Member 1"
-                  className="mx-auto rounded-xl"
-                  height="150"
-                  src="/images/Polkadot_Token_Pink.svg"
-                  style={{
-                    aspectRatio: "150/150",
-                  }}
-                  width="150"
-                />
-                <h3 className="text-lg font-semibold mt-2 text-center">
-                  Candidate to join Polkadot
-                </h3>
-              </CardHeader>
-              <CardContent>
-                <p className="text-center">
-                  We plan to become a full fledged Parachain of the Polkadot
-                  network
-                </p>
-              </CardContent>
-            </Card>
-          </a>
+        <h2 className="text-4xl font-bold text-center">Our Services</h2>
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="flex flex-col items-center intro-text">
+            <img src="images/crowdfunding.png" alt="crowdfunding illustration" className="w-20 h-20"/>
+            <b>
+              Trustless Crowdfunding
+            </b>
+            <p className="text-center">
+              Experience trustless and permissionless giving through our crowdfunding platform.
+            </p>
+          </div>
+          <div className="flex flex-col items-center intro-text">
+            <img src="images/distribution.png" alt="distribution illustration" className="w-20 h-20"/>
+            <b>
+              Efficient aid distribution
+            </b>
+            <p className="text-center">
+              Learn how nonprofits can efficiently deliver digital humanitarian assistance using our platform.            </p>
+          </div>
+        </div>
+      </section>
+      <section className="py-12 text-center takeActionBackground">
+        <div className="text-white take-action-box inline-block">
+          <h2 className="text-4xl font-bold text-center">TAKE ACTION NOW</h2>
+          <div className="max-w-lg mx-auto mb-6 items-center intro-text">
+            <p>Join our movement to make a difference.</p>
+            <p>Get involved in revolutionizing the way humanitarian aid is delivered and supported</p>
+            <a href="https://discord.gg/d3QnfrebmY" >
+              <Button className="mt-6 px-8 py-3 bg-green-500 rounded">
+                Get Involved
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
       <footer className="flex items-center justify-between px-6 py-4 bg-gray-800 text-white">
         <div className="flex items-center space-x-2">
-          <Link href="https://twitter.com/chain_giving">
-            <TwitterIcon className="h-6 w-6" />
+        <Link href="https://twitter.com/chain_giving">
+            <TwitterIcon className="h-6 w-6"/>
           </Link>
           <Link href="https://github.com/chaingiving">
-            <GithubIcon className="h-6 w-6" />
+            <GithubIcon className="h-6 w-6"/>
           </Link>
           <Link href="https://discord.gg/d3QnfrebmY">
             <DiscordIcon className="h-6 w-6 white" />
           </Link>
         </div>
-        <p className="text-sm">© Chain.Giving. All rights reserved.</p>
+        <p className="text-sm text-center">© Chain.Giving. All rights reserved.</p>
+        <p className="text-sm"><img src="images/Polkadot_Token_Pink.svg" className="w-5 h-5 inline"/> Powered by Polkadot</p>
       </footer>
     </section>
   );
