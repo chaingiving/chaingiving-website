@@ -78,3 +78,27 @@ p.take-action-text {
 .takeActionBackground {
   background-color: #042A2B;
 }
+
+.iframeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+}
+
+.iframeWrapper iframe {
+  width: 100%;
+  height: 100vh;        /* Viewport-relative units */
+  max-width: 100%; /* Ensures responsiveness */
+  max-height: 100%; /* Ensures responsiveness */
+
+  transform: scale(1.3);
+  transform-origin: 0 0; /* Top left corner */
+  border: none;
+
+
+  margin:auto;
+  display:block;
+}

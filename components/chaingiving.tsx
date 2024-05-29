@@ -7,31 +7,18 @@ import {Button} from "@/components/ui/button";
 
 export function ChainGiving() {
   return (
-    <section className="w-full">
-      <header className="flex items-center justify-between px-6 py-4">
-        <Link className="flex items-center space-x-2" href="#">
-          <HeartIcon className="h-6 w-6 text-red-600" />
-          <span className="text-lg font-semibold">Chain.Giving</span>
-        </Link>
-        <nav className="space-x-4">
-          <Link className="text-sm font-medium" href="#">
-            Home
-          </Link>
-          <Link className="text-sm font-medium" href="https://chaingiving.substack.com/">
-            Blog
-          </Link>
-        </nav>
-      </header>
-      <main className="px-6 py-12 grid md:grid-cols-2 mb-4 items-center justify-center">
-        <div className="justify-start">
-          <h1 className="text-5xl font-bold py-6"><span className="chaingivingColor">Chain.Giving</span>, where giving meets blockchain technology</h1>
-          <p className="intro-text">
-            Our mission is to revolutionize digital humanitarian assistance
-            by empowering donors, nonprofits, and communities through transparency and efficiency.
-          </p>
-        </div>
-        <div className="">
-          <img src="images/chain-giving-her-section.png" alt="chain giving illustration"/>
+  <section className="w-full">
+    <main className="px-6 py-12 grid md:grid-cols-2 mb-4 items-center justify-center">
+      <div className="justify-start md:w-1/2 mx-auto">
+        <h1 className="text-5xl font-bold py-6"><span className="chaingivingColor">Chain.Giving</span>, where giving
+          meets blockchain technology</h1>
+        <p className="intro-text">
+          Our mission is to revolutionize digital humanitarian assistance
+          by empowering donors, nonprofits, and communities through transparency and efficiency.
+        </p>
+      </div>
+      <div className="">
+        <img src="images/chain-giving-her-section.png" alt="chain giving illustration"/>
         </div>
 
         {/*<p>*/}
@@ -43,17 +30,22 @@ export function ChainGiving() {
         {/*  </a>*/}
         {/*</p>*/}
       </main>
-      <section className="py-12 text-center intro bg-gray-100 dark:bg-gray-600">
+      <section className="py-12 text-center intro ">
         <div className="intro-box inline-block intro-box">
           <h2 className="text-3xl font-bold intro-box">Discover Chain.Giving</h2>
-          <p className="max-w-lg mx-auto mb-6 text-bold intro-box intro-text">
+          <p className="md:max-w-lg mx-auto mb-6 text-bold intro-box intro-text">
             Explore how Chain.Giving is transforming philanthropy with innovative blockchain technology.
           </p>
+          <a href="/litepaper">
+            <Button className="px-8 py-3 bg-green-500 hover:bg-green-700 rounded text-white">
+              Read our Litepaper
+            </Button>
+          </a>
         </div>
       </section>
       <section className="px-6 py-12">
         <h2 className="text-4xl font-bold text-center">Our Services</h2>
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-10 md:w-3/4 mx-auto">
           <div className="flex flex-col items-center intro-text">
             <img src="images/crowdfunding.png" alt="crowdfunding illustration" className="w-20 h-20"/>
             <b>
@@ -79,8 +71,8 @@ export function ChainGiving() {
           <div className="max-w-lg mx-auto mb-6 items-center intro-text">
             <p>Join our movement to make a difference.</p>
             <p>Get involved in revolutionizing the way humanitarian aid is delivered and supported</p>
-            <a href="https://discord.gg/d3QnfrebmY" >
-              <Button className="mt-6 px-8 py-3 bg-green-500 rounded">
+            <a href="https://polkadot.giving" >
+              <Button className="mt-6 px-8 py-2 bg-green-500 hover:bg-green-700 rounded">
                 Get Involved
               </Button>
             </a>
@@ -103,25 +95,6 @@ export function ChainGiving() {
         <p className="text-sm"><img src="images/Polkadot_Token_Pink.svg" className="w-5 h-5 inline"/> Powered by Polkadot</p>
       </footer>
     </section>
-  );
-}
-
-function HeartIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-    </svg>
   );
 }
 
